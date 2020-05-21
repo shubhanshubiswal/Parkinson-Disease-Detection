@@ -1,0 +1,237 @@
+*
+{
+	margin:0;
+	padding:0
+}
+
+/*------Slider------*/
+#Slider
+{
+	width:100%;
+}
+.carousel-caption
+{
+    top:90%
+    transform:translateY(-50%)
+    bottom:initial !important;
+}
+.carousel-caption h5
+{
+    color:#fff;
+    font-size:42px;
+}	
+/*------About------*/
+#about
+{
+	padding-top:50px;
+	padding-bottom:50px;
+	color:#555;
+}
+
+.about-content
+{ 
+    padding-top:20px;
+}	
+
+
+/*-----------------Services---------------*/
+#services
+{
+
+	background-size:cover;
+	background-position:center;
+	color:#efefef !important;
+	background-attachment:fixed;
+	padding-top:50px;
+	padding-bottom:50px;
+}	
+#services h1
+{
+	text-align:center;
+	color:#efefef !important;
+	padding-bottom:10px;
+}	
+#services h1::after
+{
+	content: '';
+	background:;
+	display:block;
+	height:3px;
+	width:170px;
+	margin:20px auto 5px;
+}	
+.services
+{
+	margin-top:40px;
+}
+.icon
+{
+	font-size:40px;
+	margin:20px auto;
+	padding:20px;
+	height:80px;
+	width:80px;
+	border:1px solid #fff;
+	border-radius:50%;
+}
+#services padding
+{
+    font-size:14px;
+    margin-top:20px;
+    color:#ccc;	
+}
+.services .col-md-3:hover
+{
+	background:#007bff;
+	cursor:pointer;
+	transition:0.7s;
+}
+/*------About------*/
+#news
+{
+	padding-top:50px;
+	padding-bottom:50px;
+	color:#555;
+}
+#news .btn
+{
+    margin-top:25px;
+    margin-bottom:30px;
+}
+.news-content
+{ 
+    padding-top:20px;
+}	
+/*---------contact-------*/
+#contact
+{
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/contact2.jpg);
+	background-size:cover;
+	background-position:center;
+	color:#fff;
+	background-attachment:fixed;
+	text-align:center;
+	padding:100px;
+	font-family:sans-serif;
+	font-size:38px;
+}
+/*-----Testimonials-----*/
+#testimonials
+{
+	padding-top:50px;
+	padding-bottom:50px;
+}
+#testimonials .row
+{
+	margin-top:30px;
+}	
+.col-md-4
+{
+	margin:40px auto;
+}	
+.profile
+{
+	padding:70px 10px 10px;
+	background-color:#efefef;
+}
+.user
+{
+	width:120px;
+	height:120px;
+	border-radius:50%;
+}	
+.profile img
+{
+	top:-60px;
+	position:absolute;
+	left:calc(50%  - 60px);
+	border:10px solid white;
+}
+.profile h3
+{
+	font-size:20px;
+	margin-top:15px;
+	color:#007bff;
+}
+#testimonials span
+{
+	font-size:12px;
+	color:#333;
+}
+blockquote
+{
+	font-size:16px;
+	line-height:30px;
+}
+blockquote::before
+{
+	content:'\93';
+	font-size:50px;
+	color:#007bff;
+	position:relative;
+	line-height:20px;
+	bottom:-15px;
+	right:5px;
+}
+blockquote::after
+{
+	content:'\94';
+	font-size:50px;
+	color:#007bff;
+	position:relative;
+	line-height:10px;
+	bottom:-15px;
+	right:5px;
+}
+.profile:hover
+{
+	box-shadow:0 0 15px 5px rgba(0,0,0,0.2);
+	cursor:pointer;
+	transition:0.5s;
+	
+}
+/*--------------Get in Touch-------------*/
+#contact
+{
+	
+	padding-top:40px;
+	padding-bottom:40px;
+	color:solid white;
+}
+.contact-form
+{
+	padding:25px;
+}
+.form-control
+{
+	border-radius:0 !important;
+	border:none !important;
+}
+:: placeholder
+{
+	color:#999 !important;
+}
+.follow
+{
+	background:#999;
+	padding:30px;
+	margin:15px;
+}
+.contact-info .fa
+{
+	margin:10px;
+	color:#007bff;
+	font-weight:bold;
+}
+/*---------footer---------*/
+#footer
+{
+	background:#333;
+	color:#fff;
+	padding:12px;
+}
+.fa-heart-o
+{
+	margin:3px;
+	color:red;
+}

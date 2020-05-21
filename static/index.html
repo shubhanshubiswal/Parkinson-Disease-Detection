@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/lg2.png" type="image/png">
+	<title>PD detector</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="css/style1.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!--================ Start Header Menu Area =================-->
+	<header class="header_area">
+		<div class="header-top">
+			<div class="container">
+				<div class="row align-items-center">
+				</div>
+			</div>
+		</div>
+		<div class="main_menu">
+			<div class="search_input" id="search_input_box">
+				<div class="container">
+					<form class="d-flex justify-content-between">
+						<input type="text" class="form-control" id="search_input" placeholder="Search Here">
+						<button type="submit" class="btn"></button>
+						<span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
+					</form>
+				</div>
+			</div>
+			<nav class="navbar navbar-expand-lg navbar-light ">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/lg2.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav ml-auto">
+							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+							
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Services</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="parkinson.html">Parkinson Detector</a></li>
+									<li class="nav-item"><a class="nav-link" href="counter.html">Counter</a></li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Visualisations</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="PD_TDR.html">PD_TDR</a></li>
+									<li class="nav-item"><a class="nav-link" href="PD_MDR.html">PD_MDR</a></li>
+									<li class="nav-item"><a class="nav-link" href="PD_FDR.html">PD_FDR</a></li>
+								</ul>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+						</ul>
+						<ul class="nav navbar-nav ml-auto">
+							<li class="nav-item"><a href="#" class="search">
+									<i class="lnr lnr-magnifier" id="search"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Menu Area =================-->
+
+	<!--================ Start Home Banner Area =================-->
+	<div id="slider">
+		<div id="headerSlider" class="carousel slide" data-ride="carousel">
+		  <ol class="carousel-indicators">
+			<li data-target="#headerSlider" data-slide-to="0" class="active"></li>
+			<li data-target="#headerSlider" data-slide-to="1"></li>
+			<li data-target="#headerSlider" data-slide-to="2"></li>
+		  </ol>
+		  <div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block img-fluid" src="img/bg113.jpg" >
+				<div class="carousel-caption">
+				   <h5>WELCOME</h5>
+				</div>
+			</div> 
+		  <div class="carousel-item">
+			  <img class="d-block img-fluid" src="img/bg111.jpg" >
+			  <div class="carousel-caption">
+				 <h5>DETECT PARKINSON</h5>
+			  </div>
+		   </div>
+			<div class="carousel-item">
+			  <img class="d-block img-fluid" src="img/bg112.jpg">
+			  <div class="carousel-caption">
+				 <h5>EXPLORE OUR VISUALISATIONS</h5>
+			  </div>
+			</div>
+		  </div>
+		  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		  </a>
+		</div>
+		</div>
+	<!--================ End Home Banner Area =================-->
+<!--================ Start About Area =================-->
+	<section class="about_area lite_bg">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-12 col-md-10">
+					<div class="about_details lite_bg">
+						<h2>About the Disease</h2>
+						<p>Parkinson’s disease is a neurological disorder of the central nervous system that affects movement, often including tremors.
+							It occurs when nerve cells in the brain stop producing the chemical dopamine.
+							Without dopamine, nerve cells can’t properly send messages, causing the loss of muscle function which helps control muscle movement.  
+							Parkinson's often starts with a tremor in one hand. 
+							Other symptoms are slow movement, stiffness and loss of balance.
+							It affects more than 1 million individuals every year in India.
+							It affects a half million people in the United States, with about 50,000 newly diagnosed cases each year. 
+							There is no cure and until now, no reliable method for detecting the disease.
+							Diagnosis is based on a person's medical history and a neurological examination.
+							
+							
+							</p>
+						
+					</div>
+				</div>
+				
+					</div>
+				</div>
+			</div>
+			<div class="about_bg2 overlay"></div>
+		</div>
+	</section>
+	<section class="about_area lite_bg">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-12 col-md-10">
+					<div class="about_details lite_bg">
+						<h2>About the Product </h2>
+						<p>A detection method is a major breakthrough in diagnosing Parkinson’s in early stages, the point at which treatment to control symptoms is most effective.
+							This early detection method has proved to be more than 90 percent accurate, as it uses a highly efficient, flexible and portable machine learning algorithms like XGBoost.
+							XGBoost is an open-source software library which provides a gradient boosting framework and it aims to provides a Scalable, Portable and Distributed Gradient Boosting that solve many data science problems in a fast and accurate way.
+							We hope that we can really use this highly sensitive method that could be used by as many countries as possible to improve health care and the quality of life.
+							And it's low-cost to implement.
+							</p>
+						
+					</div>
+				</div>
+				
+					</div>
+				</div>
+			</div>
+			<div class="about_bg2 overlay"></div>
+		</div>
+	</section>
+
+<!-- -----Services---- -->
+
+<section class="blog_categorie_area">
+	<div class="container">
+		<h1>Our Services</h1>
+		<br><br>
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="categories_post">
+					<img src="img/blog/cat-post/s1.jpg" alt="post">
+					<div class="categories_details">
+						<div class="categories_text">
+							<a href="parkinson.html">
+								<h5>Parkinson Detector</h5>
+							</a>
+							<div class="border_line"></div>
+							<p>With given data as input by user, we provide test result, predicted percentage of its occurance and risk level with maximum accuracy.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="categories_post">
+					<img src="img/blog/cat-post/s2.jpg" alt="post">
+					<div class="categories_details">
+						<div class="categories_text">
+							<a href="counter.html">
+								<h5>Live Counter</h5>
+							</a>
+							<div class="border_line"></div>
+							<p>It shows the count tally of people tested their test data over here, also the negative and positive cases with their risk level .</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="categories_post">
+					<img src="img/blog/cat-post/s3.jpg" alt="post">
+					<div class="categories_details">
+						<div class="categories_text">
+							<a href="PD_TDR.html">
+								<h5>Visualisations</h5>
+							</a>
+							<div class="border_line"></div>
+							<p>We provide different dynamic maps with multiple functionalities depicting the total death rates of men, women and both together worldwide.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<br><br>
+	<!--================ Start About Area =================-->
+	<section class="about_area lite_bg">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-7 col-md-6">
+					<div class="about_details lite_bg">
+						<h2>Our Mission</h2>
+						<p>The increase in rate of Parkinson’s disease is a matter of great concern and with the inadequate healthcare systems makes for a recipe of disaster. 
+							With the increase in growth of machine learning applications, which are being used in almost every working class sector, it was pretty obvious for the creation of a program that would target Parkinson’s disease.
+							
+							<br>This website takes pre-defined data or newly inputted data and uses machine learning to determine the probability of an individual for having Parkinson’s disease with near accuracy(94% accurate). 
+							This website was created to help the healthcare industry to easily take the results from examinations done for Parkinson’s in an individual and shortening the review process by predicting through machine learning. 
+							This could save time for both patients and healthcare systems by shortening the long and complex review processes.
+							
+							<br>With the increase in number of data interpretations and compilations the program evolves and results become more accurate.</p>
+						
+					</div>
+				</div>
+				
+					</div>
+				</div>
+			</div>
+			<div class="about_bg overlay"></div>
+		</div>
+	</section>
+	<section class="about_area lite_bg">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-12 col-md-10">
+					<div class="about_details lite_bg">
+						<h2>About Us</h2>
+						<p>Welcome to the "Parkinson's Disease Detection" website. It is developed by the team "CET_BHUBANESWAR_LEGIT_CODERS".It is your number one source for all the parkinson disease related information.
+							 We're dedicated to giving you the very best of our services, with a focus on detecting parkinson's probability in your case, giving real time visualisations which 
+							 include dynamic maps with multiple functionalities depicting the death rates worldwide, live counter which keeps the tally of positive and negative cases with their 
+							 risk level and all related news ,blogs , updates and innovations.
+
+
+							<br>Founded in 2020 by the "CET_BHUBANESWAR_LEGIT_CODERS",the website has been developed in such a way ,so that it can offer you with the best of our services. We are thrilled that we're able to turn our passion into our own website.
+							
+							
+							<br>We hope you enjoy our services as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.
+							</p>
+						
+					</div>
+				</div>
+				
+					</div>
+				</div>
+			</div>
+			<div class="about_bg2 overlay"></div>
+		</div>
+	</section>
+	<!--================ End About Area =================-->
+
+
+	<!--================ Start footer Area  =================-->
+	<footer class="footer-area section-gap">
+		<div class="footer_top section_gap">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-7 col-sm-8">
+						<div class="single-footer-widget">
+							<h4 class="text-white">Admin</h4>
+							<p class="names">
+							
+								Aditya Prasad Tripathy<br>
+				               <a href="mailto:adityatripathy0000@gmail.com">adityatripathy0000@gmail.com</a>
+								
+							
+								
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-4  col-md-6 col-sm-6">
+						<div class="single-footer-widget">
+							<h4 class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Admin</h4>
+							<p  class="num">
+								
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shubhanshu Biswal <br>
+			
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:shubhanshubiswal51@gmail.com">shubhanshubiswal51@gmail.com </a>
+							
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="single-footer-widget">
+							<h4 class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Admin</h4>
+							<p class="email">
+								
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Soumyajit Bal<br>
+							
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:rahulbal99@gmail.com">rahulbal99@gmail.com </a>
+							</p>
+						</div>
+					</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="d-flex justify-content-between align-items-center flex-wrap">
+					<p class="footer-text" >
+                    Copyright | All rights reserved | CET_BHUBANESWAR_LEGIT_CODERS
+
+					<div class="footer-social d-flex align-items-center">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================ End footer Area  =================-->
+
+	<!-- Additional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="vendors/lightbox/simpleLightbox.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+	<script src="vendors/counter-up/jquery.counterup.js"></script>
+	<script src="js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
+</body>
+
+</html>
