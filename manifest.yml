@@ -1,0 +1,6 @@
+  
+---
+applications:
+ - name: Parkinson-Disease-Detection
+   random-route: true
+   memory: 256M

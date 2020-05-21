@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+     <link rel="icon" href="img/lg2.png" type="image/png">
+  <title>Parkinson Detector</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Parkinson Detector</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="./static/website/index.html">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+ 
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <div class="row center">
+        <h4 class="header center orange-text"><strong>Detection of Parkinson's Disease using<br>  Machine Learning</strong>
+        <br><br>
+        </h4>
+      </div>
+
+              <div class="row">
+    <form action='/predict' method="post" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+            <label for="first"><b>MDVP:Fo(Hz)</b></label>
+            <br>
+          <input placeholder="MDVP:Fo in Hz" name="MDVP:Fo(Hz)" id="first" type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+
+          <label for="second"><b>MDVP:Fhi(Hz)</b></label>
+            <br>
+          <input id="second" name="MDVP:Fhi(Hz)" placeholder="MDVP:Fhi in Hz"  type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="third"><b>MDVP:Flo(Hz)</b></label>
+            <br>
+          <input id="third" name="MDVP:Flo(Hz)" placeholder="MDVP:Flo in Hz" type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+
+          <label for="fourth"><b>MDVP:Jitter(%)</b></label>
+            <br>
+          <input id="fourth" name="MDVP:Jitter(%)" placeholder="MDVP:Jitter %"  type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+
+          <label for="fifth"><b>MDVP:Jitter(Abs)</b></label>
+            <br>
+          <input id="fifth" name="MDVP:Jitter(Abs)" placeholder="MDVP:Jitter in Abs"  type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+
+          <label for="sixth"><b>MDVP:RAP</b></label>
+            <br>
+          <input id="sixth" name="MDVP:RAP" placeholder="MDVP:RAP"  type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+
+          <label for="seventh"><b>MDVP:PPQ</b></label>
+            <br>
+          <input id="seventh" name="MDVP:PPQ" placeholder="MDVP:PPQ"  type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+
+          <label for="eigth"><b>Jitter:DDP</b></label>
+            <br>
+          <input id="eight" name="Jitter:DDP" placeholder="Jitter:DDP"  type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+
+          <label for="ninth"><b>MDVP:Shimmer</b></label>
+            <br>
+          <input id="ninth" name="MDVP:Shimmer" placeholder="MDVP:Shimmer"  type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+
+          <label for="tenth"><b>MDVP:Shimmer(dB)</b></label>
+            <br>
+          <input id="tenth" name="MDVP:Shimmer(dB)" placeholder="MDVP:Shimmer in dB"  type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+
+          <label for="eleventh"><b>Shimmer:APQ3</b></label>
+            <br>
+          <input id="eleventh" name="Shimmer:APQ3" placeholder="Shimmer:APQ3"  type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+
+          <label for="twelvth"><b>Shimmer:APQ5</b></label>
+            <br>
+          <input id="twelvth" name="Shimmer:APQ5" placeholder="Shimmer:APQ5"  type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+
+          <label for="thirteen"><b>MDVP:APQ</b></label>
+            <br>
+          <input id="thirteen" name="MDVP:APQ" placeholder="MDVP:APQ"  type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+
+          <label for="forteen"><b>Shimmer:DDA</b></label>
+            <br>
+          <input id="forteen" name="Shimmer:DDA" placeholder="Shimmer:DDA"  type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+
+          <label for="fifteen"><b>NHR</b></label>
+            <br>
+          <input id="fifteen" name="NHR" placeholder="NHR"  type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+
+          <label for="sixteen"><b>HNR</b></label>
+            <br>
+          <input id="sixteen" name="HNR" placeholder="HNR"  type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+
+          <label for="seventeen"><b>RPDE</b></label>
+            <br>
+          <input id="seventeen" name="RPDE" placeholder="RPDE"  type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+
+          <label for="eighteen"><b>DFA</b></label>
+            <br>
+          <input id="eighteen" name="DFA" placeholder="DFA"  type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+
+          <label for="ninteen"><b>spread1</b></label>
+            <br>
+          <input id="ninteen" name="spread1" placeholder="spread1"  type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+
+          <label for="twenty"><b>spread2</b></label>
+            <br>
+          <input id="twenty" name="spread2" placeholder="spread2"  type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+
+          <label for="twentyone"><b>D2</b></label>
+            <br>
+          <input id="twentyone" name="D2" placeholder="D2"  type="text" class="validate">
+
+        </div>
+         <div class="input-field col s4">
+
+          <label for="twentytwo"><b>PPE</b></label>
+            <br>
+          <input id="twentytwo" name="PPE" placeholder="PPE"  type="text" class="validate">
+
+        </div>
+
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light orange">Predict</button>
+      </div>
+    </form>
+      </div>
+
+  
+    </div>
+  </div>
+
+  
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
+
